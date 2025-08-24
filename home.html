@@ -56,78 +56,139 @@
     </section>
     <div class="bg-white p-5 rounded-b-xl mt-0">
       <section class="grid-sec grid grid-cols-3 gap-2 bg-white">
-        <div class="py-3 rounded-lg border-1 border-blue-400 text-center">
+        <div
+          id="add-money-feature"
+          class="py-3 rounded-lg border-1 border-blue-400 text-center"
+        >
           <img class="mx-auto" src="./assets/wallet1.png" alt="" />
           <h2>Add Money</h2>
         </div>
-        <div class="py-3 rounded-lg border-1 border-blue-400 text-center">
+        <div
+          id="cash-out-feature"
+          class="py-3 rounded-lg border-1 border-blue-400 text-center"
+        >
           <img class="mx-auto" src="./assets/send1.png" alt="" />
           <h2>Cash Out</h2>
         </div>
-        <div class="py-3 rounded-lg border-1 border-blue-400 text-center">
+        <div
+          id="transfer-money-feature"
+          class="py-3 rounded-lg border-1 border-blue-400 text-center"
+        >
           <img class="mx-auto" src="./assets/money1.png" alt="" />
           <h2>Transfer Money</h2>
         </div>
-        <div class="py-3 rounded-lg border-1 border-blue-400 text-center">
+        <div
+          id="get-bonus-feature"
+          class="py-3 rounded-lg border-1 border-blue-400 text-center"
+        >
           <img class="mx-auto" src="./assets/bonus1.png" alt="" />
           <h2>Get Bonus</h2>
         </div>
-        <div class="py-3 rounded-lg border-1 border-blue-400 text-center">
+        <div
+          id="pay-bill-feature"
+          class="py-3 rounded-lg border-1 border-blue-400 text-center"
+        >
           <img class="mx-auto" src="./assets/money1.png" alt="" />
           <h2>Pay Bills</h2>
         </div>
-        <div class="py-3 rounded-lg border-1 border-blue-400 text-center">
+        <div
+          id="transactions-feature"
+          class="py-3 rounded-lg border-1 border-blue-400 text-center"
+        >
           <img class="mx-auto" src="./assets/transaction1.png" alt="" />
           <h2>Transactions</h2>
         </div>
       </section>
     </div>
 
-    <!--  Input section starts here -->
-    <div>
-      <h1 class="font-semibold text-lg m-3">Add Money</h1>
-      <form class="bg-white w-[400px] p-5 rounded-xl mt-5 mx-auto">
-        <label for="" class="font-semibold"> Select a bank</label> <br />
-        <select class="bg-[#f4f5f7] w-full p-2 rounded-lg border-none my-3">
-          <option selected disabled>select a bank</option>
-          <option>Islami Bank Bangladesh</option>
-          <option>Dhaka Bank</option>
-          <option>Mercantile Bank</option>
-        </select>
-        <br />
-        <label for="" class="font-semibold">Bank account number</label>
-        <input
-          type="text"
-          placeholder="Enter 11 digit acc number"
-          id="bank-acc-number"
-          class="bg-[#f4f5f7] w-full p-2 rounded-lg border-none my-3"
-        />
-        <br />
-        <label for="" class="font-semibold">Amount to add</label> <br />
-        <input
-          type="text"
-          id="amount"
-          placeholder="Enter amount"
-          class="bg-[#f4f5f7] w-full p-2 rounded-lg border-none my-3"
-        />
-        <br />
-        <label for="" class="font-semibold">PIN Number</label><br />
-        <input
-          type="text"
-          placeholder="Enter 4 digit pin number"
-          id="pin"
-          class="bg-[#f4f5f7] w-full p-2 rounded-lg border-none my-3"
-        />
-        <button
-          type="button"
-          id="btn-add-money"
-          class="p-3 border-none bg-blue-500 text-white w-full mt-3 rounded-xl hover:bg-blue-700"
-        >
-          Add Money
-        </button>
-      </form>
-    </div>
+    <!--  Add Money section starts here -->
+    <section id="add-money-container" class="add-money-container">
+      <div>
+        <h1 class="font-semibold text-lg m-3">Add Money</h1>
+        <form class="bg-white w-[400px] p-5 rounded-xl mt-5 mx-auto">
+          <label for="" class="font-semibold"> Select a bank</label> <br />
+          <select
+            id="bank-name"
+            class="bg-[#f4f5f7] w-full p-2 rounded-lg border-none my-3"
+          >
+            <option selected disabled>select a bank</option>
+            <option>Islami Bank Bangladesh</option>
+            <option>Dhaka Bank</option>
+            <option>Mercantile Bank</option>
+          </select>
+          <br />
+          <label for="" class="font-semibold">Bank account number</label>
+          <input
+            type="text"
+            placeholder="Enter 11 digit acc number"
+            id="bank-acc-number"
+            class="bg-[#f4f5f7] w-full p-2 rounded-lg border-none my-3"
+          />
+          <br />
+          <label for="" class="font-semibold">Amount to add</label> <br />
+          <input
+            type="text"
+            id="amount"
+            placeholder="Enter amount"
+            class="bg-[#f4f5f7] w-full p-2 rounded-lg border-none my-3"
+          />
+          <br />
+          <label for="" class="font-semibold">PIN Number</label><br />
+          <input
+            type="text"
+            placeholder="Enter 4 digit pin number"
+            id="pin"
+            class="bg-[#f4f5f7] w-full p-2 rounded-lg border-none my-3"
+          />
+          <button
+            type="button"
+            id="btn-add-money"
+            class="p-3 border-none bg-blue-500 text-white w-full mt-3 rounded-xl hover:bg-blue-700"
+          >
+            Add Money
+          </button>
+        </form>
+      </div>
+    </section>
 
+    <!-- Cash out section starts here -->
+    <section id="cash-out-container" class="cash-out-container">
+      <div>
+        <h1 class="font-semibold text-lg m-3">Cash Out</h1>
+        <form class="bg-white w-[400px] p-5 rounded-xl mt-5 mx-auto">
+          <label for="" class="font-semibold">Agent number</label>
+          <input
+            type="text"
+            placeholder="Enter 11 digit agent number"
+            id="input-agent-number"
+            class="bg-[#f4f5f7] w-full p-2 rounded-lg border-none my-3"
+          />
+          <br />
+          <label for="" class="font-semibold">Amount</label> <br />
+          <input
+            type="text"
+            id="withdraw-amount"
+            placeholder="Enter amount to withdraw"
+            class="bg-[#f4f5f7] w-full p-2 rounded-lg border-none my-3"
+          />
+          <br />
+          <label for="" class="font-semibold">PIN Number</label><br />
+          <input
+            type="text"
+            placeholder="Enter 4 digit pin number"
+            id="pin"
+            class="bg-[#f4f5f7] w-full p-2 rounded-lg border-none my-3"
+          />
+          <button
+            type="button"
+            id="btn-add-money"
+            class="p-3 border-none bg-blue-500 text-white w-full mt-3 rounded-xl hover:bg-blue-700"
+          >
+            Withdraw Money
+          </button>
+        </form>
+      </div>
+    </section>
     <!-- js added -->
     <script src="./home.js"></script>
   </body>
